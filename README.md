@@ -29,11 +29,14 @@ Topology_analysis_MT.R
 Print_exact_tops.R
 -Prints gene tree topologies with branchlengths and support values removed to make them more human readable        
 
-D_stat_BCvsAB.R
--Script used to calculate the D-statistic comparing the frequencies of A(BC) and C(AB) for nuclear genes
+D_stat.R
+-script used to calculate stie-pattern based (standard application) D-statistics.
 
-D_stat_ACvsAB.R 
--Script used to calculate the D-statistic comparing the frequencies of B(AC) and C(AB) for nuclear genes
+Dgt_stat_BCvsAB.R
+-Script used to calculate the Dgt-statistic comparing the frequencies of A(BC) and C(AB) for nuclear genes
+
+Dgt_stat_ACvsAB.R
+-Script used to calculate the Dgt-statistic comparing the frequencies of B(AC) and C(AB) for nuclear genes
 
 Phylonet.nex
 -Nexus file containing rooted nuclear gene trees. The last line of the file is the executable line for PhyloNet (this example is to run PhlyoNet with 0 reticulations). Analysis is run from command line with: java -jar /pathtophylonet/PhyloNet_3.6.1.jar Phylonet.nex >output_file
@@ -59,9 +62,6 @@ Chromosome_maps.R
 Linkage_blocks.R
 -Script used to detect linear clustering of genes with the same topology along the C. rubella chromosome map.
 
+Window_based_node_depth.R
+-Script used for window-based node depth analysis
 
-Git notes:
-git add --all
-git status
-git commit -m "notes about the changes made"
-git push
